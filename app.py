@@ -14,7 +14,7 @@ if "GEMINI_API_KEY" not in st.secrets:
 
 api_key = st.secrets["GEMINI_API_KEY"]
 genai.configure(api_key=api_key)
-model = genai.GenerativeModel('gemini-1.5-flash-latest')
+model = genai.GenerativeModel('gemini-2.0-flash')
 
 uploaded_file = st.file_uploader("写真をアップロードしてください", type=['jpg', 'png', 'jpeg'])
 
